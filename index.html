@@ -97,7 +97,7 @@
     text-align: center;
 }
 .footer-bg{
- background: url('images/footer_bg.jpg') no-repeat;
+ background: url('img/footer_bg.jpg') no-repeat;
  /*background: #0e0e0e;*/
  background-size: cover;
  width: 100%;
@@ -112,11 +112,21 @@
  position: relative;
  text-align: center;
  top: 24px;
+ display: table;
+}
+.footer-text-box{
+ /*border: 1px solid red; */
+ display: table-cell;
+ text-align: center;
+ width:auto;
+ /*display: inline-block; */
+ 
 }
 .footer_txt {
     color: #FFFFEF;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 25px;
+    margin: 0px auto 0px;
 }
 .item-box-icon{ 
     /*display: inline-block;      */
@@ -126,30 +136,40 @@
     top: -20px;
 } 
 
-.item-box-text{
- /*border: 1px solid red; */
- txt-align: center;
- text-indent:50px;
- /*display: inline-block; */
-}
+
 
 
 </style>
 <!--JS代码网顶部CSS-->
-<link rel="shortcut icon" href="images/logo.png"/>
+<link rel="shortcut icon" href="img/logo.png"/>
 <link rel="stylesheet" type="text/css" href="css/gdt-style.css">
+<link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/unslider.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <!--JS代码网顶部CSS-->
 </head>
 <body  bgcolor="#fbf4fe">
-
+ <!--轮播图-->
+        <div class="banner">
+            <div>
+                <ul>
+                    <li><a><img src="img/banner_01.jpg"></a></li>
+                    <li><a><img src="img/banner_02.jpg"></a></li>
+                    <li><a><img src="img/banner_03.jpg"></a></li>
+                    <li><a><img src="img/banner_04.jpg"></a></li>
+                    <li><a><img src="img/banner_05.jpg"></a></li>
+                </ul>
+            </div>
+        </div>
 
     <div class='slider'>
         <ul class='slider_pic'>
-            <li><a href="http://www.js-css.cn" title=""><img src='images/banner1.png'/></a></li>
-
-            <li><a href="http://www.js-css.cn" title=""><img src='images/banner3.png'/></a></li>
-            <li><a href="http://www.js-css.cn" title=""><img src='images/banner4.png'/></a></li>
-            <li><a href="http://www.js-css.cn" title=""><img src='images/banner5.png'/></a></li>
+            <li><a href="http://www.js-css.cn" title=""><img src='img/banner1.png'/></a></li>
+            <li><a href="http://www.js-css.cn" title=""><img src='img/banner3.png'/></a></li>
+            <li><a href="http://www.js-css.cn" title=""><img src='img/banner4.png'/></a></li>
+            <li><a href="http://www.js-css.cn" title=""><img src='img/banner5.png'/></a></li>
         </ul>
         <div class='slider_btn'>
             <span class='cur'>1</span>
@@ -272,8 +292,8 @@
     拓荒农业科技农业科技的技术开发、服务、咨询、转让,农业信息咨询,蔬菜、花卉、苗木、农作物种植、销售,农家乐观光旅游,农业机械、化肥销售,水产品、家禽养殖、销售,食用农产品销售,农机服务,园林技术服务,草坪、盆景作物培育、销售，电子商务运营与管理，接受通信运营商委托经营代收话费业务。</div><br/>
     <div class="txt_title  gradual">金稻商城：</div>
 
-    <div class="txt_content">金稻商城是拓荒农业科技开发有限公司全力打造的一款app，是以手机充值为主要业务的手机服务软件，用户可以在软件内实现手机充值业务，能够通过软件内提供的活动享受超多的优惠，同时还有超多优惠商家入住，为你带去美好的购物体验！金稻商城app以话费充值为突破口，话费充值88折，一次性到账，具有极大的竞争力，通过优惠充值引流，扩大会员量。<br/><br/>
-        金稻商城app特色功能：<br/>
+    <div class="txt_content">金稻商城是拓荒农业科技开发有限公司全力打造的一款App，是以手机充值为主要业务的手机服务软件，用户可以在软件内实现手机充值业务，能够通过软件内提供的活动享受超多的优惠，同时还有超多优惠商家入住，为你带去美好的购物体验！金稻商城app以话费充值为突破口，话费充值88折，一次性到账，具有极大的竞争力，通过优惠充值引流，扩大会员量。<br/><br/>
+        App特色功能：<br/>
         1、不用进货照样能做生意<br/>
         2、不用发货照样有收入<br/>
         3、推广一个VIP会员奖励奖金10元<br/>
@@ -298,25 +318,37 @@
     </div>
 </div>
 <div class="download-bg">
-   <img src='images/jindao_download.png'/>
+   <img src='img/jindao_download.png'/>
    <p class="txt_scan">扫码下载APP</p>
 </div>
 <div class="footer-bg">
-    <!-- <div class="demo2">背景图半透明，文字不透明<br />方法：定位+ background:rgba(255,255,255,0.3)</div> -->
 
     <div class="footer_txt_outer">
-        <!-- <div class="item-box"> -->
-            <div class="item-box-text">
+            <div class="footer-text-box">
                 <p class="footer_txt">Copyright  2013-2018 河南拓荒农业科技开发有限公司</p>
                 <p class="footer_txt">地址：河南省南阳市方城县杨集乡物流街10号</p>
                 <p class="footer_txt">电话：4007882109 | 邮箱：jindaosc@163.com </p>
                 <p class="footer_txt">豫ICP证140571号 </p>
-                <!--  <p class="footer_txt"><a href="http://storage.xuetangx.com/public_assets/xuetangx/copyright/icp.pdf" title="京ICP证140571号" target="_blank">京ICP证140571号</a> | 京公网安备 11010802017721</p> -->
             </div>
 
         </div>
 
     </div>
-
+<script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery.event.move.js"></script>
+    <script type="text/javascript" src="js/jquery.event.swipe.js"></script>
+    <script type="text/javascript" src="js/unslider.js"></script>
+    <script>
+    $(function() {
+        $('.banner').unslider({
+            speed : 500,
+            delay : 3000,
+            nav : true,//是否启动导航图标
+            dots: true,//是否出先圆点点
+            arrows : false,
+            autoplay : true //自动轮播           
+        });
+    })
+    </script>
 </body>
 </html>
